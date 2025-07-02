@@ -1,0 +1,245 @@
+.title1
+{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 900;
+    font-size: 60px;
+    font-style: normal;
+}
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: lavender;
+}
+
+.contact_section {
+  position: relative;
+  overflow: hidden;
+  padding: 60px 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  filter: none; 
+  z-index: 1;
+  border: 1px solid white;
+}
+
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  z-index: -1;
+  opacity: 0.7;
+}
+
+.contact_section .container,
+.contact_section .contain {
+  position: relative;
+  z-index: 1;
+}
+.contain {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  padding: 5px;
+  box-sizing: border-box;
+  background: transparent;
+}
+
+.left-panel {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;   /* Center vertically */
+  align-items: flex-start;   /* Align left horizontally */
+  padding: 20px;
+  box-sizing: border-box;
+  background: #ffffff00;
+  margin: 0 10px;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.448);
+  margin-left: 0;
+  border: 1px solid #e0e0e0;
+  color: #333;
+  flex-grow: 1;
+  overflow-y: auto;
+  font-family: "Cinzel Decorative", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  text-align: left;         
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 12px;
+  margin-left: 70px;
+  color: white !important;
+}
+.form-title {
+    font-family: "Cinzel Decorative", serif;
+    font-weight: 900;
+    font-size: 60px;
+    font-style: normal;
+    color: white !important;
+}
+
+.title {
+    font-family: "Cinzel Decorative", serif;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: underline;
+}
+
+.right-panel {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 50px;
+  box-sizing: border-box;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.448);
+  margin: 0 10px;
+  border-radius: 12px;
+  border: 1px solid #e0e0e0;
+  font-family: "Cinzel Decorative", serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.right-panel {
+  margin-right: 0;
+}
+
+.form-title {
+  color: #333;
+  text-align: center;
+}
+
+.user-form label {
+  color: white !important;
+  font-weight: 500;
+}
+
+.user-form input {
+  padding: 10px;
+  font-size: 14px;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+  transition: border 0.3s ease;
+  color: white !important;
+}
+
+.user-form input:focus {
+  border-color: #3f51b5;
+}
+
+.submit-btn
+{
+  padding: 10px 15px;
+  border: none;
+  color: white;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+}
+
+.left-panel img {
+  max-width: 100%;
+  margin-top: 15px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+@media (max-width: 1024px) {
+  .contain {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .left-panel,
+  .right-panel {
+    margin: 10px 0;
+    width: 100%;
+  }
+
+  .box {
+    margin-left: 0;
+    padding: 10px;
+  }
+
+  .form-title {
+    font-size: 45px;
+  }
+}
+
+@media (max-width: 768px) {
+  .form-title {
+    font-size: 38px;
+    text-align: center;
+  }
+
+  .user-form input {
+    font-size: 13px;
+    padding: 8px;
+  }
+
+  .submit-btn {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .form-title {
+    font-size: 28px;
+  }
+
+  .left-panel,
+  .right-panel {
+    padding: 20px 10px;
+  }
+
+  .box {
+    padding: 10px;
+  }
+
+  .user-form input {
+    font-size: 12px;
+  }
+
+  .submit-btn {
+    font-size: 14px;
+    padding: 8px;
+  }
+}
+/* style={{backgroundColor:'black', color:'white', fontWeight:'bold'}} */
+.use1 {
+  color: black !important; 
+  transition: all 0.3s ease;
+  font-size: 18px;
+  padding: 8px 12px;
+  border-radius: 6px;
+}
+
+.use1:hover {
+  color: #9b87ff !important; 
+  background-color: rgba(255, 255, 255, 0.1);
+  transform: scale(1.05);
+  text-decoration: none;
+}
+.navbar-nav .nav-link {
+  color: white;
+  font-size: clamp(14px, 3vw, 18px);
+  margin-right: 15px;
+}

@@ -1,0 +1,430 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.cart-icon-container {
+  position: relative;
+  display: inline-block;
+}
+
+.icon-group {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* optional spacing between icons */
+}
+
+.cart-count {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main_container {
+  padding: 0;
+  margin: 0;
+  background-color: #1b1b2f;
+  min-height: 100vh;
+  color: #fff;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.top-bar {
+  width: 100%;
+  padding: 15px 30px;
+  background-color: #2a2a3c;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.user-button {
+  font-family: "Fleur De Leah", cursive;
+  font-weight: 600;
+  font-size: 60px;
+  color: #fff;
+  cursor: default;
+}
+
+.add-to-cart-btn {
+  background-color: #8e44ad;
+  border: none;
+  color: #fff;
+  font-size: 15px;
+  padding: 10px 24px;
+  font-weight: 600;
+  border-radius: 10px;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(142, 68, 173, 0.3);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.add-to-cart-btn:hover {
+  background-color: #6c3483;
+  transform: translateY(-2px);
+}
+
+.add-to-cart-btn:active {
+  transform: scale(0.97);
+}
+
+
+.icon-group {
+  display: flex;
+  gap: 20px;
+}
+
+.social-icon {
+  color: #fff;
+  font-size: 1.2rem;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-icon:hover {
+  transform: scale(1.2);
+  color: #6bc1ff;
+}
+
+@media (max-width: 768px) {
+  .top-bar {
+    flex-direction: column;
+    padding: 10px 15px;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .user-button {
+    font-size: 40px;
+    text-align: left;
+  }
+
+  .icon-group {
+    justify-content: flex-start;
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+
+  .social-icon {
+    font-size: 1.1rem;
+  }
+}
+
+.home {
+  width: 100%;
+  background-color: #1f1f2e;
+  padding: 18px 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.home a {
+  text-decoration: none;
+  color: #97b1d5c1;
+  font-weight: 600;
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.home a:hover {
+  color: #6bc1ff;
+  transform: scale(1.05);
+}
+
+.mobile-toggle {
+  display: none;
+  top: 75px;
+  background-color: #2a2a3c;
+  padding: 10px 20px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.home {
+  width: 100%;
+  background-color: #1f1f2e;
+  padding: 18px 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+}
+
+.home a {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.home a:hover {
+  color: #6bc1ff;
+  transform: scale(1.05);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .mobile-toggle {
+    display: block;
+  }
+
+  .home {
+    display: none;
+    flex-direction: column;
+    gap: 20px;
+    padding: 15px 10px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+  }
+
+  .home.show {
+    display: flex;
+    background-color: #1f1f2e;
+  }
+
+  .home a {
+    font-size: 1rem;
+  }
+}
+.carousel-inner img {
+  height: 700px;
+  object-fit: cover;
+}
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+  background: none !important;
+  opacity: 1 !important;
+  filter: none !important;
+  box-shadow: none !important;
+}
+
+#featuredCarousel .carousel-item img {
+  object-fit: fit; 
+  width: 100%;
+}
+@media (max-width: 768px) {
+  #featuredCarousel .carousel-item img {
+    max-height: 250px;
+  }
+}
+
+.collection-title {
+  font-family: "Kumar One Outline", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  margin-top: 110px;
+  margin-bottom: 120px;
+}
+
+.custom-card {
+  position: relative;
+  border-radius: 1rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-img {
+  height: 250px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.card-img-box:hover .product-img {
+  transform: scale(1.05);
+}
+
+.card-badge {
+  font-size: 0.75rem;
+}
+
+
+.quality {
+  margin-top: 150px;
+  text-align: center;
+}
+
+.feat-title {
+  font-family: "Kumar One Outline", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  margin-bottom: 120px;
+}
+
+.pop-title {
+  font-family: "Kumar One Outline", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  margin-bottom: 120px;
+  margin-top: 30px;
+}
+
+.genre-box {
+  background-color: #1b263b; 
+  color: #e0e8f0;          
+  font-weight: 600;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(137, 135, 135, 0.826);
+}
+
+.genre-box:hover {
+  background-color: #415a77; 
+  transform: translateY(-6px);
+}
+
+.quote-title {
+   font-family: "Italianno", cursive;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  margin-bottom: 60px;
+  margin-top: 100px;
+  font-size: 70px !important;
+}
+
+.quote {
+  text-align: center;
+  font-family: sans-serif;
+  font-size: x-large
+}
+
+.quote-auth {
+  text-align: center;
+  font-family: sans-serif;
+  font-size: x-large
+}
+
+.offer-title {
+  font-family: "Kumar One Outline", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  margin-bottom: 80px;
+  margin-top: 100px;
+}
+
+.art-title {
+  margin-top: 100px;
+  text-align: center;
+}
+
+.article-card {
+  overflow: hidden;
+  border-radius: 8px;
+  transition: box-shadow 0.3s;
+}
+
+.article-card img {
+  height: 220px;
+  width: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.article-card:hover img {
+  transform: scale(1.05);
+}
+
+.article-title  {
+  font-family: "Kumar One Outline", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  margin-bottom: 110px !important;
+  margin-top: 30px;
+}
+
+.download-section {
+  background: #0a1f445f; 
+  padding: 60px 20px;
+}
+
+.download-section h2 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.download-section p {
+  font-size: 1.1rem;
+  color: #cfd9e6;
+}
+
+.store-btn img {
+  height: 60px;
+  transition: transform 0.3s ease;
+}
+
+.store-btn:hover img {
+  transform: scale(1.05);
+}
+
+.down-text {
+  font-family: "Kumar One Outline", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  margin-bottom: 70px !important;
+  margin-top: 60px;
+}
+
+.footer-section {
+  background-color: #0b192d; 
+  color: #cbd3e3;
+}
+
+.footer-section a {
+  color: #cbd3e3;
+  text-decoration: none;
+}
+
+.footer-section a:hover {
+  color: #f8c471;
+  text-decoration: underline;
+}
+
+.footer-logo {
+  font-family: "Fleur De Leah", cursive;
+  font-weight: 600;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.footer-icons i {
+  font-size: 1.3rem;
+  margin-right: 10px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.footer-icons i:hover {
+  color: #f8c471;
+}

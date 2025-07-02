@@ -1,0 +1,82 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  height: 100%;
+  color: #fff;
+}
+
+.register-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 20px;
+  min-height: 100vh;
+}
+
+.register-card {
+  display: flex;
+  flex-wrap: wrap;
+  background: #1e1e384d;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  max-width: 700px;
+  width: 100%;
+}
+
+.register-form {
+  flex: 1 1 50%;
+  padding: 40px;
+  background: #1a1a2e77;
+}
+
+.register-title {
+    font-family: 'Cinzel Decorative', serif !important;
+  font-weight: 700;
+  font-style: normal;
+    text-align: center;
+  font-size: 38px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.register-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.register-form input {
+  background-color: #2e2e4d;
+  border: 1px solid #4e457f;
+  border-radius: 10px;
+  padding: 12px;
+  margin-bottom: 20px;
+  font-size: 15px;
+  color: #fff;
+}
+
+.register-form input::placeholder {
+  color: #aaa;
+}
+
+.register-form input:focus {
+  border: 1px solid #d19aff;
+  outline: none;
+}
+
+.register-form button {
+  background: linear-gradient(90deg, #d29aff, #9c59b6);
+  border: none;
+  padding: 14px;
+  border-radius: 10px;
+  font-size: 16px;
+  color: #1e1e2f;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.register-form button:hover {
+  background: linear-gradient(90deg, #9b59b6, #d19aff);
+}
